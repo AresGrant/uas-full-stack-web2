@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Modal } from "bootstrap";
 
 import CrudTable from "../components/CrudTable";
 import CrudModal from "../components/CrudModal";
@@ -106,7 +107,7 @@ function User() {
             role: "kasir"
         });
 
-        new bootstrap.Modal(
+        new Modal(
             document.getElementById("modalUser")
         ).show();
 
@@ -121,7 +122,7 @@ function User() {
             password: ""
         });
 
-        new bootstrap.Modal(
+        new Modal(
             document.getElementById("modalUser")
         ).show();
 
@@ -148,7 +149,7 @@ function User() {
 
             }
 
-            bootstrap.Modal
+            Modal
                 .getInstance(
                     document.getElementById("modalUser")
                 )

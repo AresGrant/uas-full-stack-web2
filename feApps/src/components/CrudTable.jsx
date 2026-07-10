@@ -23,13 +23,15 @@ function CrudTable({
                     {title}
                 </h4>
 
-                <button
-                    className="btn btn-primary"
-                    onClick={onAdd}
-                >
-                    <FaPlus className="me-2" />
-                    Tambah
-                </button>
+                {onAdd && (
+                    <button
+                        className="btn btn-primary"
+                        onClick={onAdd}
+                    >
+                        <FaPlus className="me-2" />
+                        Tambah
+                    </button>
+                )}
 
             </div>
 

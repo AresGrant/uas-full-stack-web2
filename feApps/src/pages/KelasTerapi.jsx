@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Modal } from "bootstrap";
 import CrudTable from "../components/CrudTable";
 import CrudModal from "../components/CrudModal";
 import CrudForm from "../components/CrudForm";
@@ -68,7 +69,7 @@ function KelasTerapi() {
             deskripsi: ""
         });
 
-        new bootstrap.Modal(
+        new Modal(
             document.getElementById("modalKelas")
         ).show();
 
@@ -80,7 +81,7 @@ function KelasTerapi() {
 
         setFormData(item);
 
-        new bootstrap.Modal(
+        new Modal(
             document.getElementById("modalKelas")
         ).show();
 
@@ -107,7 +108,7 @@ function KelasTerapi() {
 
             }
 
-            bootstrap.Modal
+            Modal
                 .getInstance(
                     document.getElementById("modalKelas")
                 )

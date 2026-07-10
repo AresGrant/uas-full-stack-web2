@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Modal } from "bootstrap";
 import CrudTable from "../components/CrudTable";
 import CrudModal from "../components/CrudModal";
 import CrudForm from "../components/CrudForm";
@@ -132,7 +133,7 @@ function GolonganObat() {
 
         });
 
-        const modal = new bootstrap.Modal(
+        const modal = new Modal(
             document.getElementById("modalGolongan")
         );
 
@@ -146,7 +147,7 @@ function GolonganObat() {
 
         setFormData(item);
 
-        const modal = new bootstrap.Modal(
+        const modal = new Modal(
             document.getElementById("modalGolongan")
         );
 
@@ -175,7 +176,7 @@ function GolonganObat() {
 
             }
 
-            bootstrap.Modal
+            Modal
                 .getInstance(
                     document.getElementById("modalGolongan")
                 )

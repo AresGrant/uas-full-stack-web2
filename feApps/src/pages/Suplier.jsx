@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Modal } from "bootstrap";
 
 import CrudTable from "../components/CrudTable";
 import CrudModal from "../components/CrudModal";
@@ -108,7 +109,7 @@ function Suplier() {
 
         });
 
-        new bootstrap.Modal(
+        new Modal(
 
             document.getElementById("modalSuplier")
 
@@ -122,7 +123,7 @@ function Suplier() {
 
         setFormData(item);
 
-        new bootstrap.Modal(
+        new Modal(
 
             document.getElementById("modalSuplier")
 
@@ -154,7 +155,7 @@ function Suplier() {
 
             }
 
-            bootstrap.Modal
+            Modal
                 .getInstance(
                     document.getElementById("modalSuplier")
                 )

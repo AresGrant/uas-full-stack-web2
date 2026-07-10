@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Modal } from "bootstrap";
 import CrudTable from "../components/CrudTable";
 import CrudModal from "../components/CrudModal";
 import CrudForm from "../components/CrudForm";
@@ -84,7 +85,7 @@ function SubKelasTerapi() {
 
         });
 
-        new bootstrap.Modal(
+        new Modal(
 
             document.getElementById("modalSubKelas")
 
@@ -98,7 +99,7 @@ function SubKelasTerapi() {
 
         setFormData(item);
 
-        new bootstrap.Modal(
+        new Modal(
 
             document.getElementById("modalSubKelas")
 
@@ -127,7 +128,7 @@ function SubKelasTerapi() {
 
             }
 
-            bootstrap.Modal
+            Modal
                 .getInstance(
                     document.getElementById("modalSubKelas")
                 )

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Modal } from "bootstrap";
 
 import CrudTable from "../components/CrudTable";
 import CrudModal from "../components/CrudModal";
@@ -96,7 +97,7 @@ function Pelanggan() {
             alamat: ""
         });
 
-        new bootstrap.Modal(
+        new Modal(
             document.getElementById("modalPelanggan")
         ).show();
 
@@ -108,7 +109,7 @@ function Pelanggan() {
 
         setFormData(item);
 
-        new bootstrap.Modal(
+        new Modal(
             document.getElementById("modalPelanggan")
         ).show();
 
@@ -135,7 +136,7 @@ function Pelanggan() {
 
             }
 
-            bootstrap.Modal
+            Modal
                 .getInstance(
                     document.getElementById("modalPelanggan")
                 )

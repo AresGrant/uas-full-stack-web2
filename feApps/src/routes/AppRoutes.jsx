@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AdminLayout from "../layouts/AdminLayout";
 
 import Dashboard from "../pages/Dashboard";
-import Obat from "../pages/Obat";
+import Obat from "../pages/obat";
 import Suplier from "../pages/Suplier";
 import Pelanggan from "../pages/Pelanggan";
 import User from "../pages/User";

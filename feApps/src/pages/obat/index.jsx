@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Modal } from "bootstrap";
 
 import CrudTable from "../../components/CrudTable";
 import CrudModal from "../../components/CrudModal";
@@ -73,7 +74,7 @@ function Obat() {
 
         setFormData(initialState);
 
-        new bootstrap.Modal(
+        new Modal(
 
             document.getElementById("modalObat")
 
@@ -93,7 +94,7 @@ function Obat() {
 
         });
 
-        new bootstrap.Modal(
+        new Modal(
 
             document.getElementById("modalObat")
 
@@ -129,7 +130,7 @@ function Obat() {
 
             }
 
-            bootstrap.Modal
+            Modal
 
                 .getInstance(
 
@@ -214,8 +215,6 @@ function Obat() {
                 search={search}
 
                 onSearch={(e)=>setSearch(e.target.value)}
-
-                onAdd={handleAdd}
 
                 onEdit={handleEdit}
 
