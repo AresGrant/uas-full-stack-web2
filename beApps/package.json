@@ -1,0 +1,27 @@
+{
+  "name": "mypharmacy",
+  "version": "1.0.0",
+  "description": "Backend API Aplikasi Apotek MyPharmacy",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "express",
+    "mysql",
+    "apotek"
+  ],
+  "author": "Muhammad Kamil Marzuqi Aziz",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mysql2": "^3.22.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
