@@ -16,7 +16,7 @@ function KelasTerapi() {
         createData,
         updateData,
         deleteData
-    } = useCrud("/kelasterapi");
+    } = useCrud("/kelas-terapi");
 
     const [search, setSearch] = useState("");
 

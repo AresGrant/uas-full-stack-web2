@@ -33,13 +33,13 @@ function Obat() {
     } = useCrud("/obat");
 
     const golongan = useOptions(
-        "/golobat",
+        "/golongan-obat",
         "idGol",
         "namaGol"
     );
 
     const subKelas = useOptions(
-        "/subkelasterapi",
+        "/sub-kelas-terapi",
         "idSubKelas",
         "namaSubKelas"
     );
@@ -215,6 +215,8 @@ function Obat() {
                 search={search}
 
                 onSearch={(e)=>setSearch(e.target.value)}
+
+                onAdd={handleAdd}
 
                 onEdit={handleEdit}
 

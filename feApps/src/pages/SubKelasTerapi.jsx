@@ -19,10 +19,10 @@ function SubKelasTerapi() {
         createData,
         updateData,
         deleteData
-    } = useCrud("/subkelasterapi");
+    } = useCrud("/sub-kelas-terapi");
 
     const kelasOptions = useOptions(
-        "/kelasterapi",
+        "/kelas-terapi",
         "idKelas",
         "namaKelas"
     );
