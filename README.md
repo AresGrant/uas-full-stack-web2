@@ -68,7 +68,7 @@ cd uas-full-stack-web2
 ## 1. Masuk ke folder backend
 
 ```bash
-cd backend
+cd beApps
 ```
 
 ## 2. Install dependency
@@ -84,7 +84,7 @@ Buat database MySQL sesuai dengan konfigurasi project.
 Pastikan konfigurasi database pada file:
 
 ```
-backend/config/database.js
+beApps/config/database.js
 ```
 
 sudah sesuai dengan pengaturan MySQL lokal:
