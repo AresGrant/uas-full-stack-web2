@@ -17,12 +17,12 @@ exports.create = async (data) => {
 
     const sql = `
         INSERT INTO user
-        (namaUser,username,password,role)
+        (nama,username,password,role)
         VALUES(?,?,?,?)
     `;
 
     const [result] = await db.query(sql,[
-        data.namaUser,
+        data.nama,
         data.username,
         data.password,
         data.role
@@ -36,7 +36,7 @@ exports.update = async(id,data)=>{
     const sql=`
         UPDATE user
         SET
-        namaUser=?,
+        nama=?,
         username=?,
         password=?,
         role=?
@@ -44,7 +44,7 @@ exports.update = async(id,data)=>{
     `;
 
     const [result]=await db.query(sql,[
-        data.namaUser,
+        data.nama,
         data.username,
         data.password,
         data.role,
