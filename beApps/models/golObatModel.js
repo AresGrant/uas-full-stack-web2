@@ -18,7 +18,7 @@ exports.create = async (data) => {
     const sql = `
         INSERT INTO golobat
         (namaGol,kode,perluResep,perluIdentitas,perluSIPA)
-        VALUES(?,?,?,?)
+        VALUES(?,?,?,?,?)
     `;
 
     const [result] = await db.query(sql,[
@@ -26,7 +26,7 @@ exports.create = async (data) => {
         data.kode,
         data.perluResep,
         data.perluIdentitas,
-        data.perlluSIPA
+        data.perluSIPA
     ]);
 
     return result;
