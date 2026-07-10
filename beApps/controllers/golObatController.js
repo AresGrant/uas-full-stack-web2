@@ -1,14 +1,14 @@
-const userModel = require("../models/golObatModel");
+const golObatModel = require("../models/golObatModel");
 const response = require("../helpers/response");
 
 // GET Semua User
 exports.getAll = async (req, res) => {
     try {
-        const data = await userModel.getAll();
+        const data = await golObatModel.getAll();
 
         response.success(
             res,
-            "Data user berhasil diambil",
+            "Data golObat berhasil diambil",
             data
         );
     } catch (err) {
@@ -22,11 +22,11 @@ exports.getAll = async (req, res) => {
 // GET User Berdasarkan ID
 exports.getById = async (req, res) => {
     try {
-        const data = await userModel.getById(req.params.id);
+        const data = await golObatModel.getById(req.params.id);
 
         response.success(
             res,
-            "Data user berhasil diambil",
+            "Data golongan obat berhasil diambil",
             data
         );
     } catch (err) {
@@ -40,11 +40,11 @@ exports.getById = async (req, res) => {
 // Tambah User
 exports.create = async (req, res) => {
     try {
-        await userModel.create(req.body);
+        await golObatModel.create(req.body);
 
         response.success(
             res,
-            "Data user berhasil ditambahkan",
+            "Data golongan obat berhasil ditambahkan",
             null,
             201
         );
@@ -59,14 +59,14 @@ exports.create = async (req, res) => {
 // Update User
 exports.update = async (req, res) => {
     try {
-        await userModel.update(
+        await golObatModel.update(
             req.params.id,
             req.body
         );
 
         response.success(
             res,
-            "Data user berhasil diupdate"
+            "Data golongan obat berhasil diupdate"
         );
     } catch (err) {
         response.error(
@@ -79,11 +79,11 @@ exports.update = async (req, res) => {
 // Hapus User
 exports.delete = async (req, res) => {
     try {
-        await userModel.delete(req.params.id);
+        await golObatModel.delete(req.params.id);
 
         response.success(
             res,
-            "Data user berhasil dihapus"
+            "Data golongan obat berhasil dihapus"
         );
     } catch (err) {
         response.error(
